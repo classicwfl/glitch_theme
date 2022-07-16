@@ -1,0 +1,221 @@
+/* Home-Specific Glitching */
+@glitch-pink: magenta; // I'm A
+@glitch-yellow: yellow; // SUCKER FOR
+@glitch-blue: cyan; // CMYK.
+@glitch_shadowAnimDuration: 1s;
+
+.gl1tch.gl1tch--noRadius {
+    border-radius: 0;
+}
+
+.gl1tch--shadow1 {
+    animation: gl1tchAnimShadow1 @glitch_shadowAnimDuration;
+}
+
+.gl1tch--shadow2 {
+    animation: gl1tchAnimShadow1 @glitch_shadowAnimDuration;
+}
+
+.gl1tch--shadow3 {
+    animation: gl1tchAnimShadow1 @glitch_shadowAnimDuration;
+}
+
+.gl1tch--shadow4 {
+    animation: gl1tchAnimShadow1 @glitch_shadowAnimDuration;
+}
+
+@keyframes gl1tchAnimShadow1 {
+    0% {
+        box-shadow:none;
+    }
+    20% {
+        box-shadow:15px 10px 0 0 @glitch-yellow, 5px 9px 0 0 @glitch-pink;
+    }
+    50% {
+        box-shadow:12px 1px 0 0 @glitch-yellow, 0px 0px 0 0 @glitch-pink, -5px 6px 0 0 @glitch-blue;
+    }
+    60% {
+        box-shadow:-3px -10px 0 0 @glitch-yellow, -9px -2px 0 0 @glitch-pink, 1px 12px 0 0 @glitch-blue;
+    }
+    75% {
+        box-shadow:-4px 2px 0 0 @glitch-yellow, 10px 11px 0 0 @glitch-pink, 4px -8px 0 0 @glitch-blue;
+    }
+    100% {
+        box-shadow:none;
+    }
+}
+
+@keyframes gl1tchAnimShadow2 {
+    0% {
+        box-shadow:none;
+    }
+    30% {
+        box-shadow:15px 10px 0 0 @glitch-yellow, 5px 9px 0 0 @glitch-pink;
+    }
+    40% {
+        box-shadow:12px 1px 0 0 @glitch-yellow, 0px 0px 0 0 @glitch-pink, -5px 6px 0 0 @glitch-blue;
+    }
+    60% {
+        box-shadow:-3px -10px 0 0 @glitch-yellow, -9px -2px 0 0 @glitch-pink, 1px 12px 0 0 @glitch-blue;
+    }
+    85% {
+        box-shadow:-4px 2px 0 0 @glitch-yellow, 10px 11px 0 0 @glitch-pink, 4px -8px 0 0 @glitch-blue;
+    }
+    100% {
+        box-shadow:none;
+    }
+}
+
+@keyframes gl1tchAnimShadow3 {
+    0% {
+        box-shadow:none;
+    }
+    10% {
+        box-shadow:3px 3px 0 0 @glitch-blue, -2px 5px 0 0 @glitch-pink;
+    }
+    30% {
+        box-shadow:6px 1px 0 0 @glitch-yellow, 2px -10px 0 0 @glitch-pink, -12px 5px 0 0 @glitch-blue;
+    }
+    60% {
+        box-shadow:10px -3px 0 0 @glitch-yellow, 5px -4px 0 0 @glitch-pink, 7px 4px 0 0 @glitch-blue;
+    }
+    70% {
+        box-shadow:-14px -5px 0 0 @glitch-yellow, 0px 7px 0 0 @glitch-pink, 2px 3px 0 0 @glitch-blue;
+    }
+    100% {
+        box-shadow:none;
+    }
+}
+
+@keyframes gl1tchAnimShadow4 {
+    0% {
+        box-shadow:none;
+    }
+    25% {
+        box-shadow:10px -3px 0 0 @glitch-yellow, 7px 1px 0 0 @glitch-blue;
+    }
+    40% {
+        box-shadow:-13px 6px 0 0 @glitch-yellow, 2px 12px 0 0 @glitch-pink, 6px 9px 0 0 @glitch-blue;
+    }
+    65% {
+        box-shadow:0px 0px 0 0 @glitch-yellow, -3px 14px 0 0 @glitch-pink, 5px -3px 0 0 @glitch-blue;
+    }
+    90% {
+        box-shadow:-8px 4px 0 0 @glitch-yellow, 5px 2px 0 0 @glitch-pink, 14px -5px 0 0 @glitch-blue;
+    }
+    100% {
+        box-shadow:none;
+    }
+}
+
+//Button hover glitch anim
+
+@keyframes gl1tchAnimShadowSmall {
+    0% {
+        box-shadow:none;
+    }
+    20% {
+        box-shadow:3px 2px 0 0 @glitch-yellow, 5px 4px 0 0 @glitch-pink;
+    }
+    50% {
+        box-shadow:2px 1px 0 0 @glitch-yellow, 0px 0px 0 0 @glitch-pink, -5px 3px 0 0 @glitch-blue;
+    }
+    60% {
+        box-shadow:-3px -5px 0 0 @glitch-yellow, -5px -2px 0 0 @glitch-pink, 1px 4px 0 0 @glitch-blue;
+    }
+    75% {
+        box-shadow:-4px 2px 0 0 @glitch-yellow, 3px 5px 0 0 @glitch-pink, 4px -2px 0 0 @glitch-blue;
+    }
+    100% {
+        box-shadow:none;
+    }
+}
+
+//Inner hover glitch anim
+
+@keyframes gl1tchAnimShadowInset {
+    0% {
+        box-shadow:none;
+    }
+    20% {
+        box-shadow: inset 13px 12px 0 @glitch-yellow, inset 15px 14px 0 @glitch-pink;
+    }
+    50% {
+        box-shadow:inset 12px 5px 0 @glitch-yellow, inset 0px 0px 0 @glitch-pink, inset -15px 3px 0 @glitch-blue;
+    }
+    60% {
+        box-shadow:inset -3px -15px 0 @glitch-yellow, inset -5px -12px 0 @glitch-pink, inset 4px 14px 0 @glitch-blue;
+    }
+    75% {
+        box-shadow:inset -4px 12px 0 @glitch-yellow, inset 13px 5px 0 @glitch-pink, inset 4px -12px 0 @glitch-blue;
+    }
+    100% {
+        box-shadow:none;
+    }
+}
+
+/* Headline Glitching */
+
+.gl1tch--text {
+    background-color: @glitch-darkColor;
+}
+
+.d4rkm0d3 .gl1tch--text {
+    background-color: @glitch-lightColor;
+}
+
+//Another idea for glitching, but can cause page jump issues
+// .gl1tch--text {
+//     font-size: 0;
+
+//     &:after {
+//         content: '_'; //Remove if using below crap
+//         font-size: @glitch-fontSizeXxl;
+
+//         @media (max-width: @glitch-mdBreakpoint) {
+//             font-size: @glitch-fontSizeXl;
+//         }
+
+//     }
+// }
+
+// .single .gl1tch--text:after {
+//     font-size: @glitch-fontSizeXl;
+// }
+
+/* This crap didn't totally work, but I'm leaving it just in case I try to fix it 
+.gl1tch--text.a:after {content: '4';}
+.gl1tch--text.b:after {content: '\00df';}
+.gl1tch--text.c:after {content: '(';}
+.gl1tch--text.d:after {content: 'd'; text-transform: lowercase;}
+.gl1tch--text.e:after {content: '_';}
+.gl1tch--text.f:after {content: 'f'; text-transform: lowercase;}
+.gl1tch--text.g:after {content: 'g'; text-transform: lowercase;}
+.gl1tch--text.h:after {content: 'h'; text-transform: lowercase;}
+.gl1tch--text.i:after {content: '!';}
+.gl1tch--text.j:after {content: 'j'; text-transform: lowercase;}
+.gl1tch--text.k:after {content: 'k'; text-transform: lowercase;}
+.gl1tch--text.l:after {content: '1';}
+.gl1tch--text.m:after {content: 'm';}
+.gl1tch--text.n:after {content: 'n'; text-transform: lowercase;}
+.gl1tch--text.o:after {content: '0';}
+.gl1tch--text.p:after {content: 'p'; text-transform: lowercase;}
+.gl1tch--text.q:after {content: 'q'; text-transform: lowercase;}
+.gl1tch--text.r:after {content: 'Я';}
+.gl1tch--text.s:after {content: '5';}
+.gl1tch--text.t:after {content: '7';}
+.gl1tch--text.u:after {content: 'u'; text-transform: lowercase;}
+.gl1tch--text.v:after {content: 'v'; text-transform: lowercase;}
+.gl1tch--text.w:after {content: 'w'; text-transform: lowercase;}
+.gl1tch--text.x:after {content: '}{';}
+.gl1tch--text.y:after {content: 'y'; text-transform: lowercase;}
+.gl1tch--text.z:after {content: '2';}
+.glitch--text.periodchar:after {content: '.';}
+.glitch--text.exclaimchar:after {content: '!1';}
+.glitch--text.colonchar:after {content: ';';}
+.glitch--text.semicolonchar:after {content: ':';}
+.glitch--text.amp:after {content: '+';}
+.glitch--text.spacechar:after {content: '\_';}
+.glitch--text.quotechar:after {content: '\00b4';}
+.glitch--text.dblquotechar:after {content: '\2018';}
+*/

@@ -1,0 +1,288 @@
+/* Glitch Objects */
+
+//Homepage Notice
+
+.glitch_notice {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    z-index: 100000;
+
+    &.hide {
+        display: none !important;
+        height: 0px;
+        overflow: hidden;
+        width: 0px;
+        bottom: auto;
+        right: auto;
+    }
+
+    .glitch_notice__modal {
+        width: 90%;
+        max-width: 600px;
+        background-color: @glitch-darkColor;
+        color: @glitch-lightColor;
+        padding: @glitch-spaceLg;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+//Generic
+hr {
+    border: 1px solid @glitch-darkColor;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: @glitch-spaceXl;
+    margin-bottom: @glitch-spaceLg;
+
+    & li {
+        padding: @glitch-spaceSm;
+    }
+}
+
+ul {
+    list-style-type: square;
+    margin-left: @glitch-spaceXl;
+    margin-bottom: @glitch-spaceLg;
+
+    & li {
+        padding: @glitch-spaceSm;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+//Home Objects
+.glitch_homeArt {
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+    width: 750px;
+    justify-content: space-between;
+    margin: @glitch-spaceXl auto;
+
+    @media (max-width: @glitch-mdBreakpoint) {
+        height: 400px;
+        width: 400px;
+    }
+
+    @media (max-width: @glitch-smBreakpoint) {
+        height: 90vw;
+        width: 90vw;
+    }
+}
+
+.glitch_homeArtPillar {
+    width: 26%;
+    height: 75%;
+    border-radius: 200px;
+    background-color: @glitch-darkColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 50px 45px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 50px 45px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 50px 45px 0px rgba(0,0,0,0.25);
+    transition: all .1s;
+}
+
+.glitch_homeArtPillar1 {
+    margin-top: 0;
+    margin-bottom: auto;
+    background-image: url("@{glitch-themeAssets}/wfl_glitchphoto_3.jpg");
+
+    &.gl1tch {
+        background-image: url("@{glitch-themeAssets}/wfl_glitchphoto_3_glitched.jpg");
+    }
+}
+
+.glitch_homeArtPillar2 {
+    margin-top: auto;
+    margin-bottom: 0;
+    background-image: url("@{glitch-themeAssets}/wfl_glitchphoto_2.jpg");
+
+    &.gl1tch {
+        background-image: url("@{glitch-themeAssets}/wfl_glitchphoto_2_glitched.jpg");
+    }
+}
+
+.glitch_homeArtPillar3 {
+    margin-top: 0;
+    margin-bottom: auto;
+    background-image: url("@{glitch-themeAssets}/wfl_glitchphoto_1.jpg");
+
+    &.gl1tch {
+        background-image: url("@{glitch-themeAssets}/wfl_glitchphoto_1_glitched.jpg");
+    }
+}
+
+//Containers
+.glitch_featureBox {
+    border: 4px solid @glitch-darkColor;
+    padding: @glitch-spaceLg;
+}
+
+//Footer Logo
+.glitch_footerLogo {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 90px;
+    justify-content: space-between;
+    margin: @glitch-spaceXl auto;
+}
+
+.glitch_footerLogoPillar {
+    width: 26%;
+    height: 75%;
+    border-radius: 30px;
+    background-color: @glitch-darkColor;
+}
+
+.glitch_footerLogoPillar1 {
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.glitch_footerLogoPillar2 {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.glitch_footerLogoPillar3 {
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+//Post Stuff
+
+.glitch_postHead {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 80vh;
+    min-height: 300px;
+    padding-top: @glitch-spaceXl;
+
+    &.glitch_noPhoto {
+        height: auto;
+    }
+
+    & h1 {
+        background-color: @glitch-lightColor;
+        display: inline;
+        line-height: 1.6;
+        font-size: @glitch-fontSizeXl;
+    }
+}
+
+.glitch_metaInfo {
+    background-color: @glitch-lightColor;
+    padding: @glitch-spaceLg;
+    width: 33%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: @glitch-spaceXl;
+    font-family: @glitch-monospaceType;
+    text-align: right;
+    font-size: @glitch-fontSizeSm;
+
+    @media (max-width: @glitch-smBreakpoint) {
+        width: 50%;
+    }
+
+    h3 {
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    p {
+        margin-bottom: 0;
+        margin-top: @glitch-spaceLg;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        & li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.glitch_respImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.wp-block-quote {
+    border-left: 4px solid @glitch-darkColor;
+    padding: @glitch-spaceXl;
+    margin-top: @glitch-spaceLg;
+    margin-bottom: @glitch-spaceLg;
+}
+
+.wp-block-pullquote {
+    border: 4px solid @glitch-darkColor;
+    padding: @glitch-spaceXl;
+    margin-top: @glitch-spaceLg;
+    margin-bottom: @glitch-spaceLg;
+}
+
+.glitch_postFooter {
+    width: 100%;
+
+    & > nav > .nav-links {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        
+        & > div {
+            width: 50%;
+            min-width: 250px;
+            padding: @glitch-spaceMd;
+            flex-grow: 1;
+
+            &:first-child {
+                text-align: left;
+            }
+
+            &:nth-child(2) {
+                text-align: right;
+            }
+
+            @media (max-width: @glitch-smBreakpoint) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//Form Layout Stuff
+.glitch_contactForm {
+    & input, textarea {
+        border: 2px solid @glitch-darkColor !important;
+        background: transparent !important;
+        color: @glitch-darkColor !important;
+    }
+}

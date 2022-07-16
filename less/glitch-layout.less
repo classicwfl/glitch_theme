@@ -1,0 +1,167 @@
+body {
+    background-color: @glitch-lightColor;
+    color: @glitch-darkColor;
+    transition: background-color .5s ease-in-out,
+                color .5s ease-in-out;
+}
+
+.glitch_container {
+    width: 100%;
+    padding: @glitch-spaceXxl @glitch-spaceLg @glitch-spaceXxl @glitch-spaceLg;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.glitch_column {
+    flex-basis: 47%;
+
+    @media (max-width: @glitch-mdBreakpoint) {
+        flex-basis: 100%;
+    }
+}
+
+.glitch_column--full {
+    flex-basis: 100%;
+}
+
+//Add spacing to objects
+.margin_vertMd {
+    margin-top: @glitch-spaceMd;
+    margin-bottom: @glitch-spaceMd;
+}
+
+.margin_vertLg {
+    margin-top: @glitch-spaceLg;
+    margin-bottom: @glitch-spaceLg;
+}
+
+.margin_vertXl {
+    margin-top: @glitch-spaceXl;
+    margin-bottom: @glitch-spaceXl;
+}
+
+//Misc page settings
+.glitch_pageHead {
+    padding: 16px 50px 16px 16px;
+}
+
+// WP caption
+.wp-caption {
+    width: 100% !important;
+
+    & .wp-caption-text {
+        font-family: @glitch-monospaceType;
+        font-style: italic;
+    }
+}
+
+//Post List Stuff
+.glitch_postListItem {
+    padding-bottom: @glitch-spaceXl;
+    clear: both;
+}
+
+.glitch_postListTitle {
+    float: left;
+    min-width: 290px;
+    width: 70%;
+
+    @media (max-width: @glitch-smBreakpoint) {
+        width: 100%;
+        float: none;
+    }
+}
+
+.glitch_postListDate {
+    float: right;
+    min-width: 110px;
+    width: 30%;
+    text-align: right;
+    @media (max-width: @glitch-smBreakpoint) {
+        width: 100%;
+        float: none;
+    }
+}
+
+.ytvideo {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: @glitch-spaceLg;
+
+    & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//Image List Stuff
+.glitch_imageListItem {
+    display: block;
+    flex-basis: 47%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    margin-bottom: @glitch-spaceLg;
+    padding-top: @glitch-spaceMd;
+    color: @glitch-darkColor;
+
+    @media (max-width: @glitch-mdBreakpoint) {
+        flex-basis: 100%;
+    }
+
+    @media (max-width: @glitch-smBreakpoint) {
+        min-height: 250px;
+    }
+
+    &:hover {
+        box-shadow: none;
+        background-color: @glitch-darkColor;
+        color: @glitch-lightColor;
+        animation: gl1tchAnimShadowInset 2s;
+        color: inherit;
+    }
+}
+
+.glitch_imageListTitle {
+    background-color: @glitch-lightColor;
+    display: inline-block;
+}
+
+//Records
+.glitch_trackList {
+    margin-top: @glitch-spaceLg;
+    margin-bottom: @glitch-spaceMd;
+
+    & ol {
+        list-style-type: decimal;
+        margin-left: @glitch-spaceXl;
+
+        & li {
+            padding: @glitch-spaceSm;
+        }
+    }
+}
+
+//Pagination
+.posts-navigation {
+    margin-top: @glitch-spaceXxl;
+
+    & .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .nav-next {
+            text-align: left;
+        }
+    }
+}
